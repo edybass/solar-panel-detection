@@ -4,23 +4,24 @@ WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    gdal-bin \
-    libgdal-dev \
-    gcc \
-    g++ \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    libgl1-mesa-glx \
+    libgeos-dev \
     && rm -rf /var/lib/apt/lists/*
 
-ENV CPLUS_INCLUDE_PATH=/usr/include/gdal
-ENV C_INCLUDE_PATH=/usr/include/gdal
-
+# Copy requirements
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy application
 COPY . .
 
-RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
-USER appuser
-
+# Expose port
 EXPOSE 8000
 
-CMD ["python", "scripts/detect_solar_panels.py", "--help"]
+# Run application
+CMD ["python", "-m", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]

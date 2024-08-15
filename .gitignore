@@ -1,20 +1,47 @@
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
 .Python
-build/
-dist/
-*.egg-info/
-.env
-.venv
-env/
 venv/
-.idea/
-.vscode/
-*.tif
-*.tiff
+env/
+.env
+
+# Data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 *.h5
-*.hdf5
-data/raw/
-data/processed/
+*.pt
+*.pth
+*.pkl
+*.csv
+
+# Models
+*.onnx
+*.tflite
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml

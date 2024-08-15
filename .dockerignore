@@ -1,14 +1,27 @@
-.git
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Data
+data/raw/*
+data/processed/*
+*.h5
+*.pt
+*.pth
+
+# Git
+.git/
 .gitignore
-README.md
-Dockerfile
-.dockerignore
-.pytest_cache
-.coverage
-**/__pycache__
-**/*.pyc
-data/raw/
-data/processed/
-models/checkpoints/
+
+# IDE
 .vscode/
 .idea/
+
+# OS
+.DS_Store
+Thumbs.db
