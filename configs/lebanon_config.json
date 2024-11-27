@@ -1,0 +1,12 @@
+{
+    "region": "lebanon",
+    "satellite_source": "sentinel-2", 
+    "detection_threshold": 0.75,
+    "geographic_bounds": {
+        "north": 34.69,
+        "south": 33.05,
+        "east": 36.62,
+        "west": 35.10
+    },
+    "municipalities": ["Beirut", "Tripoli", "Sidon", "Tyre", "Baalbek"]
+}
