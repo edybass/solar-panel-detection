@@ -1,0 +1,14 @@
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+.pytest_cache
+.coverage
+**/__pycache__
+**/*.pyc
+data/raw/
+data/processed/
+models/checkpoints/
+.vscode/
+.idea/
