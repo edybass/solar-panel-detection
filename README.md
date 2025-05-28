@@ -184,16 +184,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Author**: Edy Bass
-- **Email**: contact@edybass.com
-- **LinkedIn**: [edybass](https://linkedin.com/in/edybass)
+- **Author**: Edy Bassilil
+- **Email**: bassileddy@gmail.com
+- **LinkedIn**: www.linkedin.com/in/edybassilil
 
 ## 📊 Citation
 
 If you use this project in your research, please cite:
 ```bibtex
 @software{solar-panel-detection,
-  author = {Edy Bass},
+  author = {Edy Bassil},
   title = {Solar Panel Detection System},
   year = {2024},
   publisher = {GitHub},
